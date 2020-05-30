@@ -13,7 +13,7 @@ export class HomeComponent implements OnInit {
 
   constructor(private dataService: DataService) {}
   value: string;
-  weatherData: WeatherDataInfo;
+  weatherData: any;
   currDiv = 'A';
   iconurl: any;
 

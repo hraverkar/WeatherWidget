@@ -1,2 +1,2 @@
 # WeatherWidget
-Weather Widget - 
+Weather Widget - Under Development.

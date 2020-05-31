@@ -29,3 +29,59 @@ mat-card-content {
 .button {
   justify-content: space-evenly;
 }
+
+.mat-card-design {
+  display: flex;
+  background-image: url('https://images.unsplash.com/photo-1547438349-ccaae46cc0ec?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60');
+  height: 600px;
+  // width: 500px;
+  min-width: 500px;
+  max-width: 600px;
+  // height: 440px;
+  border: gray solid 1px;
+  position: relative;
+  border-radius: 20px;
+  opacity: 5;
+
+}
+
+.current {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.current-temp {
+  font-size: 79px;
+  font-weight: bold;
+  margin-top: auto;
+  margin-bottom: auto;
+  text-align: left;
+}
+
+.today-detail {
+  padding-top: 5px;
+  margin-left: 20px;
+  height: 170px;
+  font-size: 13px;
+  font-weight: bold;
+}
+
+.today-detail > div {
+  padding: 2px;
+}
+
+.next-days {
+  margin: 0;
+  background-color: rgba($color: #000e02, $alpha: 0.5);
+  color: white;
+  font-size: 13px;
+  border-radius: 0 0 15px 19px;
+  text-align: center;
+  -webkit-box-shadow: 0px -1px 3px 0px rgba(0,0,0,0.75);
+  -moz-box-shadow: 0px -1px 3px 0px rgba(0,0,0,0.75);
+  box-shadow: 0px -1px 3px 0px rgba(0,0,0,0.75);
+}
+
+.next-days span {
+  vertical-align:middle;
+}

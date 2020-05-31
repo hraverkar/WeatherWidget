@@ -22,16 +22,40 @@
     <mat-card-header>
       <mat-card-title>Weather information</mat-card-title>
     </mat-card-header>
-    <mat-card-content>
-    <p>
-    </p>
+    <mat-card-content style="opacity: 0.6;" class="mat-card-design">
       <div>
-        <img src= {{iconurl}} alt="Girl in a jacket" width="50" height="50">
+        <div class="row current">
+          <div class="col">
+            <img src="https://i.ibb.co/tbzMBj9/sun.png" width="140px">
+          </div>
+          <div class="col current-temp">{{weatherData.currentTemp | number : '1.2'}}<sup>&#x2103;</sup></div>
+        </div>
       </div>
+      <div class="today-detail">
+        <div> Location - {{weatherData.cityName}}</div>
+        <div> {{weatherData.curDate}}</div>
+        <div> Feels Like - {{weatherData.currentFillsLike | number : '1.2'}}<sup>&#x2103;</sup></div>
+        <div> Max Temp - {{weatherData.currentMaxTemp | number : '1.2'}}<sup>&#x2103;</sup></div>
+        <div> Min Temp - {{weatherData.currentMinTemp | number : '1.2'}}<sup>&#x2103;</sup></div>
+        <div> Degree - {{weatherData.degree}}</div>
+        <div> Description - {{weatherData.description}}</div>
+        <div> Ground Level - {{weatherData.groundLevel}} mt.</div>
+        <div> Humidity - {{weatherData.humidity}}  %</div>
+        <div> Weather - {{weatherData.main}}</div>
+        <div> Pressure - {{weatherData.pressure}} Pascal</div>
+        <div> Sea Level - {{weatherData.seaLevel}} mt.</div>
+        <div> Wind Speed - {{weatherData.speed}} km/h</div>
+        <div> Sunrise Time - {{weatherData.sunRise}}</div>
+        <div> Sunset Time - {{weatherData.sunSet}}</div>
+        <div>
+          <img src={{iconurl}} alt={{weatherData.description}} width="50" height="50">
+        </div>
+      </div>
+    </mat-card-content>
+    <mat-card-actions>
       <div class="button">
         <button mat-raised-button color="primary" (click)="clearSearch('A')">Clear Result</button>
       </div>
-    </mat-card-content>
-
+    </mat-card-actions>
   </div>
 </mat-card>

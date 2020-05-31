@@ -4,9 +4,9 @@
 Get the Weather information, using city name search option.
 
 # Screenshot
-![Img1](https://github.com/hraverkar/Marvel/blob/master/screenshot/msedge_KKCBemWPxd.jpg)
+![Img1](https://github.com/hraverkar/WeatherWidget/blob/master/screenshot/1.png)
 
-![Img2](https://github.com/hraverkar/Marvel/blob/master/screenshot/msedge_pPBrCDQm81.png)
+![Img2](https://github.com/hraverkar/WeatherWidget/blob/master/screenshot/2.png)
 ## Live Preview
 
 You can [view the app live here](https://weather-widget.hraverkar.now.sh/)

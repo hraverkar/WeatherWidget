@@ -1,3 +1,4 @@
+import { environment } from './../../environments/environment.prod';
 import { Injectable } from '@angular/core';
 import {
   HttpClient,
@@ -11,14 +12,17 @@ import { catchError, retry, tap } from 'rxjs/operators';
   providedIn: 'root',
 })
 export class DataService {
-  public URL = 'https://api.openweathermap.org/data/2.5/weather?appid=';
-  public APIKEY = 'a3f07567f71036c71a8e7a860b66a706';
+  public URL: string;
+  public APIKEY: string;
 
-  constructor(private httpClient: HttpClient) {}
+  constructor(private httpClient: HttpClient) {
+    this.URL = environment.apiUrl;
+    this.APIKEY = environment.apiKey;
+  }
 
   getLocationData(cityName: string) {
     return this.httpClient
-      .get<any>(this.URL + this.APIKEY + '&q=' + cityName, {
+      .get<any>(this.URL + '?appid=' + this.APIKEY + '&q=' + cityName, {
         params: new HttpParams({}),
         observe: 'response',
       })

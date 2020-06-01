@@ -10,6 +10,8 @@ import { HomeComponent } from './componenet/home/home.component';
 import { HeaderComponent } from './componenet/header/header.component';
 import { FooterComponent } from './componenet/footer/footer.component';
 import { FlexLayoutModule } from '@angular/flex-layout';
+import { ServiceWorkerModule } from '@angular/service-worker';
+import { environment } from '../environments/environment';
 
 @NgModule({
   declarations: [
@@ -24,7 +26,8 @@ import { FlexLayoutModule } from '@angular/flex-layout';
     BrowserAnimationsModule,
     HttpClientModule,
     MaterialModule,
-    FlexLayoutModule
+    FlexLayoutModule,
+    ServiceWorkerModule.register('ngsw-worker.js', { enabled: environment.production })
   ],
   providers: [],
   bootstrap: [AppComponent]

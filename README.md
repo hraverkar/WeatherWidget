@@ -1,7 +1,7 @@
 [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/heroku/node-js-getting-started)
 
 # Weather Widget
-Get the Weather information, using city name search option.
+Get the Weather information, using city name in search option.
 
 # Screenshot
 ![Img1](https://github.com/hraverkar/WeatherWidget/blob/master/screenshot/1.png)
